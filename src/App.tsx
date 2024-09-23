@@ -1,11 +1,15 @@
-import './App.css'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home.js';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
-      <h1>Previous Year Questions</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
