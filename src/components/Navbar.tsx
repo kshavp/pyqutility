@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="">
-      <ul className="flex justify-between gap-x-8">
+      <ul className="grid grid-cols-2 place-items-center md:flex justify-between md:gap-x-8">
         {semesters.map((semester, index) => (
           <li
             className={`cursor-pointer ${

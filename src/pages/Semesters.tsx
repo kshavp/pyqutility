@@ -1,15 +1,24 @@
 import Soon from "./Soon"
-import { SEM1_SUBJECTS } from "../constant"
+import { SEM1_SUBJECTS, SEM2_SUBJECTS } from "../constant"
+import SemTile from "../components/SemTile"
 
 export const Semester1 = () => {
-  
+
   return (
-    <div>Semester1</div>
+    <div className="mx-8 md:grid grid-cols-3">
+      {SEM1_SUBJECTS.map((subject, index)=>(
+        <SemTile key={index} subjects={subject}/>
+      ))}
+    </div>
   )
 }
 export const Semester2 = () => {
   return (
-    <div>Semester2</div>
+    <div className="mx-8 md:grid grid-cols-3">
+      {SEM2_SUBJECTS.map((subject, index)=>(
+        <SemTile key={index} subjects={subject}/>
+      ))}
+    </div>
   )
 }
 export const Semester3 = () => {
