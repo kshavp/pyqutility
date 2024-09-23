@@ -14,7 +14,7 @@ const Quotations: React.FC = () => {
 
   return (
     <div>
-      <h1>{quotes[quoteIndex]}</h1>
+      <h1 className="italic text-center">"{quotes[quoteIndex]}"</h1>
     </div>
   );
 };
