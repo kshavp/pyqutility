@@ -24,12 +24,12 @@ const Navbar: React.FC = () => {
   const routeName = useLocation().pathname.split("/").pop();
 
   return (
-    <nav className="">
-      <ul className="grid grid-cols-2 place-items-center md:flex justify-between md:gap-x-8">
+    <nav className="mt-8 rounded-md">
+      <ul className="bg-customRed-light grid grid-cols-2 place-items-center md:flex justify-between md:gap-x-8 rounded-md">
         {semesters.map((semester, index) => (
           <li
-            className={`cursor-pointer ${
-              routeName === semester.route ? "underline" : ""
+            className={`p-3 rounded-md bg-customRed-light cursor-pointer ${
+              routeName === semester.route ? "bg-customRed-dark text-white" : "bg-customRed-light"
             }`}
             key={index}
           >

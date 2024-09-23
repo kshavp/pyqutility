@@ -2,7 +2,7 @@ import React from "react";
 
 const SemTile: React.FC = ({ subjects }) => {
   return (
-    <div className="text-center my-6 border rounded-lg shadow-md p-4 m-2 hover:shadow-lg transition duration-300 bg-gray-800">
+    <div className="text-center my-6 border rounded-lg shadow-md px-4 py-12 m-2 hover:shadow-lg transition duration-300 bg-gray-800">
       <h3 className="my-6 text-3xl font-semibold text-customRed">
         {subjects.subject}
       </h3>

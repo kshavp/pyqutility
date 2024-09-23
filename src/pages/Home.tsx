@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className=''>
+    <div className='relative'>
       <h1>Welcome to the Semester Page</h1>
       {renderSemesterComponent()}
       
