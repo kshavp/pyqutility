@@ -1,6 +1,10 @@
 import React from "react";
 
-const SemTile: React.FC = ({ subjects }) => {
+interface Subjects {
+    subject:string, code:string, ie1:string, ie2:string, ie3:string, finals:string
+}
+
+const SemTile: React.FC<Subjects> = ( subjects ) => {
   return (
     <div className="text-center my-6 border rounded-lg shadow-md px-4 py-12 m-2 hover:shadow-lg transition duration-300 bg-gray-800">
       <h3 className="my-6 text-3xl font-semibold text-customRed">

@@ -14,11 +14,11 @@ export const quotes : string[] = [
 export const API_S1 = "https://github.com/priyanshujoshi01/srm_questionPaper/tree/main/Mca/1year/first_sem/"
 export const API_S2 = "https://github.com/priyanshujoshi01/srm_questionPaper/tree/main/Mca/1year/second_sem/"
 
-interface subjects {
+interface Subjects {
     subject:string, code:string, ie1:string, ie2:string, ie3:string, finals:string
 }
 
-export const SEM1_SUBJECTS : subjects[] = [
+export const SEM1_SUBJECTS : Subjects[] = [
     {
       subject: "Java",
       code: "PCAXXXXXX",
@@ -61,7 +61,7 @@ export const SEM1_SUBJECTS : subjects[] = [
     },
 ]
 
-export const SEM2_SUBJECTS : subjects[] = [
+export const SEM2_SUBJECTS : Subjects[] = [
     {
       subject: "Optimization Techniques",
       code: "PCAXXXXXX",
